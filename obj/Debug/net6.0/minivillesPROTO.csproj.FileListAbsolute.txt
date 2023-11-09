@@ -1,0 +1,14 @@
+C:\Users\jolan\source\repos\minivillesPROTO\obj\Debug\net6.0\minivillesPROTO.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jolan\source\repos\minivillesPROTO\obj\Debug\net6.0\minivillesPROTO.AssemblyInfoInputs.cache
+C:\Users\jolan\source\repos\minivillesPROTO\obj\Debug\net6.0\minivillesPROTO.AssemblyInfo.cs
+C:\Users\jolan\source\repos\minivillesPROTO\obj\Debug\net6.0\minivillesPROTO.csproj.CoreCompileInputs.cache
+C:\Users\jolan\source\repos\minivillesPROTO\bin\Debug\net6.0\minivillesPROTO.exe
+C:\Users\jolan\source\repos\minivillesPROTO\bin\Debug\net6.0\minivillesPROTO.deps.json
+C:\Users\jolan\source\repos\minivillesPROTO\bin\Debug\net6.0\minivillesPROTO.runtimeconfig.json
+C:\Users\jolan\source\repos\minivillesPROTO\bin\Debug\net6.0\minivillesPROTO.dll
+C:\Users\jolan\source\repos\minivillesPROTO\bin\Debug\net6.0\minivillesPROTO.pdb
+C:\Users\jolan\source\repos\minivillesPROTO\obj\Debug\net6.0\minivillesPROTO.dll
+C:\Users\jolan\source\repos\minivillesPROTO\obj\Debug\net6.0\refint\minivillesPROTO.dll
+C:\Users\jolan\source\repos\minivillesPROTO\obj\Debug\net6.0\minivillesPROTO.pdb
+C:\Users\jolan\source\repos\minivillesPROTO\obj\Debug\net6.0\minivillesPROTO.genruntimeconfig.cache
+C:\Users\jolan\source\repos\minivillesPROTO\obj\Debug\net6.0\ref\minivillesPROTO.dll
