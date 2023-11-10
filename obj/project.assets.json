@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jolan\\source\\repos\\minivillesPROTO\\minivillesPROTO.csproj",
+      "projectUniqueName": "C:\\Users\\jolan\\source\\repos\\minivillesPROTO_3\\minivillesPROTO.csproj",
       "projectName": "minivillesPROTO",
-      "projectPath": "C:\\Users\\jolan\\source\\repos\\minivillesPROTO\\minivillesPROTO.csproj",
+      "projectPath": "C:\\Users\\jolan\\source\\repos\\minivillesPROTO_3\\minivillesPROTO.csproj",
       "packagesPath": "C:\\Users\\jolan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jolan\\source\\repos\\minivillesPROTO\\obj\\",
+      "outputPath": "C:\\Users\\jolan\\source\\repos\\minivillesPROTO_3\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\jolan\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -61,7 +61,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
       }
     }
   }
