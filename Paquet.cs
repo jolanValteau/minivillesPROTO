@@ -6,41 +6,80 @@ using System.Threading.Tasks;
 
 namespace minivillesPROTO
 {
-    internal class Paquet
+    internal class Paquet : IHasAPaquet
     {
-        private Carte[] cartes = new Carte[48];
+        private List<Carte> _cards = new();
 
-        public static List<(int, int, string, string, string, int)> modelesCartes = new List<(int, int, string, string, string, int)>();
+        public static List<(int, int, string, string, string, int, int, int)> templatesCards = new();
 
         public Carte this[int i]
         {
-            get { return cartes[i]; }
-            set { cartes[i] = value; }
+            get { return _cards[i]; }
+            set { _cards[i] = value; }
         }
 
-        public Paquet()
+        public Paquet() { }
+
+        public void ClearPaquet()
         {
-            int indexPaquet = 0;
-            foreach (var carteInfo in modelesCartes)
+            this._cards = new();
+        }
+
+        public void ResetPaquet()
+        {
+            this._cards = new();
+            this.AddAllCards();
+        }
+
+        public void AddCard(Carte card)
+        {
+            this._cards.Add(card);
+        }
+
+        public void RemoveCard(Carte card) 
+        {
+            this._cards.Remove(card);
+        }
+
+        public Carte TakeRandomCard()
+        {
+            Carte chosen = this._cards[new Random().Next(0, this._cards.Count)];
+            this._cards.Remove(chosen);
+            return chosen;
+        }
+
+        public Carte? TakeCardWithIdOrNull(int id)
+        {
+            Carte? result = null;
+            foreach (Carte card in this._cards)
             {
-                for (int i = 0; i < 6; i++)
+                if (card.Id == id)
                 {
-                    this.cartes[indexPaquet] = new Carte(carteInfo);
-                    indexPaquet++;
+                    result = card;
+                    break;
+                }
+            }
+            return result;
+        }
+
+        public int GetNbCards() { return this._cards.Count; }
+
+        public void AddAllCards()
+        {
+            foreach (var cardInfo in Paquet.templatesCards)
+            {
+                for (int loop = 0; loop < 6; loop++)
+                {
+                    this._cards.Add(new Carte(cardInfo));
                 }
             }
         }
 
-        public Carte GetRandomCard()
+        public void DisplayCards()
         {
-            return this.cartes[new Random().Next(0, this.cartes.Length)];
-        }
-
-        public void Debug()
-        {
-            foreach (Carte carte in cartes)
+            foreach (Carte card in _cards)
             {
-                Console.WriteLine(carte.ToString());
+                Console.WriteLine(card.ToString());
             }
         }
     }
